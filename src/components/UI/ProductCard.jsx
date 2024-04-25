@@ -5,6 +5,7 @@ import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../redux/slices/cartSlice";
+import { favActions } from "../../redux/slices/favSlice";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
@@ -24,6 +25,20 @@ const ProductCard = ({ item }) => {
 
     toast.success("Product added to the cart!");
   };
+
+  const addToFavs = () => {
+    dispatch(
+      favActions.addItem({
+        id: item.id,
+        productName: item.productName,
+        price: item.price,
+        imgUrl: item.imgUrl,
+      })
+    );
+
+    toast.success("Product added to the favorites!");
+  };
+
   return (
     <Col lg="3" md="4" className="mb-2">
       <div className="product__item">
@@ -45,9 +60,22 @@ const ProductCard = ({ item }) => {
         </div>
         <div className="product__card-bottom d-flex align-items-center justify-content-between p-2">
           <span className="price">${item.price}</span>
-          <motion.span whileTap={{ scale: 1.2 }} onClick={addToCart}>
-            <i className="ri-add-line"></i>
-          </motion.span>
+          <div>
+            <motion.span
+              className="inline-block"
+              whileTap={{ scale: 1.2 }}
+              onClick={addToCart}
+            >
+              <i className="ri-add-line"></i>
+            </motion.span>
+            <motion.span
+              className="inline-block ml-2"
+              whileTap={{ scale: 1.2 }}
+              onClick={addToFavs}
+            >
+              <i className="ri-heart-fill"></i>
+            </motion.span>
+          </div>
         </div>
       </div>
     </Col>

@@ -29,6 +29,7 @@ const nav__links = [
 const Header = () => {
   const headerRef = useRef(null);
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+  const totalFavs = useSelector((state) => state.fav.totalQuantity);
   const profileActionRef = useRef(null);
 
   const menuRef = useRef(null);
@@ -72,6 +73,10 @@ const Header = () => {
     navigate("/cart");
   };
 
+  const navigateToFavs = () => {
+    navigate("/favorites");
+  };
+
   const toggleProfileActions = () => {
     profileActionRef.current.classList.toggle("show__profileActions");
   };
@@ -82,9 +87,21 @@ const Header = () => {
         <Row>
           <div className="nav__wrapper">
             <div className="logo">
-              <img src={logo} alt="logo" />
+              <img
+                onClick={() => {
+                  navigate("/home");
+                }}
+                src={logo}
+                alt="logo"
+              />
               <div>
-                <h1>DerenMarkt</h1>
+                <h1
+                  onClick={() => {
+                    navigate("/home");
+                  }}
+                >
+                  DerenMarkt
+                </h1>
               </div>
             </div>
             <div className="navigation" ref={menuRef} onClick={menuToggle}>
@@ -104,9 +121,9 @@ const Header = () => {
               </ul>
             </div>
             <div className="nav__icons">
-              <span className="fav__icon">
+              <span className="fav__icon" onClick={navigateToFavs}>
                 <i className="ri-heart-line"></i>
-                <span className="badge">1</span>
+                <span className="badge">{totalFavs}</span>
               </span>
               <span className="cart__icon" onClick={navigateToCart}>
                 <i className="ri-shopping-bag-line"></i>
@@ -116,7 +133,7 @@ const Header = () => {
                 <motion.img
                   whileTap={{ scale: 1.2 }}
                   src={currentUser ? currentUser.photoURL : userIcon}
-                  alt=""
+                  alt="profile"
                   onClick={toggleProfileActions}
                 />
                 <div

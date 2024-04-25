@@ -32,7 +32,7 @@ const Signup = () => {
         password
       );
       const user = userCredential.user;
-      const storageRef = ref(storage, `images/${Date.now() + username}`);
+      const storageRef = ref(storage, `images/${username}`);
       const uploadTask = uploadBytesResumable(storageRef, file);
 
       uploadTask.on(
@@ -41,11 +41,13 @@ const Signup = () => {
         },
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
+            console.log("Download URL:", downloadURL);
             await updateProfile(user, {
               //update user profile
               displayName: username,
               photoURL: downloadURL,
             });
+            console.log("user profile updated");
             //store userdata in firestore database
             await setDoc(doc(db, "users", user.uid), {
               uid: user.uid,
@@ -53,6 +55,7 @@ const Signup = () => {
               email,
               photoURL: downloadURL,
             });
+            console.log("firestore data stored");
           });
         }
       );
@@ -105,7 +108,7 @@ const Signup = () => {
                   <FormGroup className="form__group">
                     <input
                       type="file"
-                      onChange={(e) => setFile(e.target.value)}
+                      onChange={(e) => setFile(e.target.files[0])}
                     />
                   </FormGroup>
                   <button type="submit" className="shop__btn auth__btn">
