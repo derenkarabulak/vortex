@@ -204,17 +204,8 @@
   }
 
   .logo img {
-    width: 1rem;
-    height: 1rem;
-  }
-
-  .logo h1 {
-    font-size: 1rem;
-  }
-
-  .fav_icon i,
-  .cart__icon i {
-    font-size: 1.2rem !important;
+    width: 15%;
+    height: 15%;
   }
 
   .nav__icons span img {
