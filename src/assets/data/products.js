@@ -1,575 +1,358 @@
-import productImg01 from "../images/double-sofa-01.png";
-import productImg02 from "../images/double-sofa-02.png";
-import productImg03 from "../images/double-sofa-03.png";
+import productImg01 from "../images/is-ceketi-01.jpg";
+import productImg02 from "../images/is-ceketi-02.jpg";
+import productImg03 from "../images/is-ceketi-03.jpg";
+import productImg04 from "../images/is-ceketi-04.jpg";
+import productImg05 from "../images/is-ceketi-05.jpg";
 
-import productImg04 from "../images/single-sofa-01.jpg";
-import productImg05 from "../images/single-sofa-02.jpg";
-import productImg06 from "../images/single-sofa-03.jpg";
-import productImg007 from "../images/single-sofa-04.png";
+import productImg06 from "../images/kaban-01.jpg";
+import productImg07 from "../images/kaban-02.jpg";
+import productImg08 from "../images/kaban-03.jpg";
+import productImg09 from "../images/kaban-04.jpg";
+import productImg10 from "../images/kaban-05.jpg";
+import productImg11 from "../images/kaban-06.jpg";
+import productImg12 from "../images/kaban-07.jpg";
+import productImg13 from "../images/kaban-08.jpg";
+import productImg14 from "../images/kaban-09.jpg";
+import productImg15 from "../images/kaban-10.jpg";
+import productImg16 from "../images/kaban-11.jpg";
 
-import productImg07 from "../images/arm-chair-01.jpg";
-import productImg08 from "../images/arm-chair-02.jpg";
-import productImg09 from "../images/arm-chair-03.jpg";
-import productImg10 from "../images/arm-chair-01.jpg";
-
-import productImg13 from "../images/phone-01.jpg";
-import productImg14 from "../images/phone-02.jpg";
-import productImg15 from "../images/phone-03.png";
-import productImg16 from "../images/phone-04.jpg";
-import productImg17 from "../images/phone-05.jpg";
-import productImg18 from "../images/phone-06.jpg";
-
-import productImg19 from "../images/watch-01.jpg";
-import productImg20 from "../images/watch-02.jpg";
-import productImg21 from "../images/watch-03.jpg";
-import productImg22 from "../images/watch-04.jpg";
-
-import productImg23 from "../images/wireless-01.png";
-
-import productImg25 from "../images/wireless-03.png";
+import productImg17 from "../images/mont-01.jpg";
+import productImg18 from "../images/mont-02.jpg";
+import productImg19 from "../images/mont-03.jpg";
+import productImg20 from "../images/mont-04.jpg";
+import productImg21 from "../images/mont-05.jpg";
+import productImg22 from "../images/mont-06.jpg";
+import productImg23 from "../images/mont-07.jpg";
+import productImg24 from "../images/mont-08.jpg";
+import productImg25 from "../images/mont-09.jpg";
+import productImg26 from "../images/mont-10.jpg";
+import productImg27 from "../images/mont-11.jpg";
+import productImg28 from "../images/mont-12.jpg";
+import productImg29 from "../images/mont-13.jpg";
+import productImg30 from "../images/mont-14.jpg";
+import productImg31 from "../images/mont-15.jpg";
+import productImg32 from "../images/mont-16.jpg";
 
 const products = [
   {
     id: "01",
-    productName: "Stone and Beam Westview ",
+    productName: "İş Ceketi",
     imgUrl: productImg01,
-    category: "sofa",
-    price: 193,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    category: "İş Ceketi",
+    code: "CK 102",
+    shortDesc: "İş Ceketi",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.7,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.5,
+      "Pamuk polyester karışımlı kumaştan, reflektörlü, fonksiyonel cepli, iş ceketi. İstenilen renklerde imalat yapılabilir.",
   },
 
   {
     id: "02",
-    productName: "Rivet Bigelow Modern ",
+    productName: "İş Ceketi",
     imgUrl: productImg02,
-    category: "sofa",
-    price: 253,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    category: "İş Ceketi",
+    code: "CK 101",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
+      "Pamuk polyester karışımlı kumaştan, çift renk kombinli iş ceketi. İstenilen renklerde imalat yapılabilir.",
   },
 
   {
     id: "03",
-    productName: "Amazon Brand Modern Sofa",
+    productName: "İş Ceketi",
     imgUrl: productImg03,
-    category: "sofa",
-    price: 173,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    category: "İş Ceketi",
+    code: "CK 103",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
+      "Pamuk polyester karışımlı kumaştan, reflektörlü iş ceketi. İstenilen renklerde imalat yapılabilir.",
   },
-  {
-    id: "26",
-    productName: "Rivet Bigelow Modern ",
-    imgUrl: productImg02,
-    category: "sofa",
-    price: 253,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
-  },
+
   {
     id: "04",
-    productName: "Fluffy Sheep Sofa",
+    productName: "İş Ceketi",
     imgUrl: productImg04,
-    category: "sofa",
-    price: 163,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    category: "İş Ceketi",
+    code: "CK 104",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
+      "Pamuk polyester karışımlı kumaştan, çift renk kombinli iş ceketi. İstenilen renklerde imalat yapılabilir.",
   },
 
   {
     id: "05",
-    productName: "Faux Velvet Sofa",
+    productName: "İş Ceketi",
     imgUrl: productImg05,
-    category: "sofa",
-    price: 163,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    category: "İş Ceketi",
+    code: "CK 105",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
+      "Pamuk polyester karışımlı kumaştan, çift renk kombinli iş ceketi. İstenilen renklerde imalat yapılabilir.",
   },
 
   {
     id: "06",
-    productName: "Fluffy Sheep Sofa",
+    productName: "Kaban",
     imgUrl: productImg06,
-    category: "sofa",
-    price: 163,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    category: "Kaban",
+    code: "KB 101",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
-  },
-  {
-    id: "07",
-    productName: "Sakarias Armchair",
-    imgUrl: productImg07,
-    category: "chair",
-    price: 99,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
+      "Polyesterli kaplamalı kumaştan, içi kapitoneli, çift renk kombinli, reflektörlü,4 ayrı fonksiyonlu kullanılabilen kaban. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
-    id: "27",
-    productName: "Modern Arm Sofa",
-    imgUrl: productImg007,
-    category: "sofa",
-    price: 173,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    id: "07",
+    productName: "Kaban",
+    imgUrl: productImg07,
+    category: "Kaban",
+    code: "KB 102",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
+      "Polyesterli kaplamalı kumaştan, içi kapitoneli, çift renk kombinli, kapüşonlu kaban. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "08",
-    productName: "Baltsar Chair",
+    productName: "Kaban",
     imgUrl: productImg08,
-    category: "chair",
-    price: 89,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    category: "Kaban",
+    code: "KB 103",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
+      "Polyesterli kaplamalı kumaştan, içi kapitoneli, çift renk kombinli, kapüşonlu kaban. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "09",
-    productName: "Helmar Chair",
+    productName: "Kaban",
     imgUrl: productImg09,
-    category: "chair",
-    price: 112,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    category: "Kaban",
+    code: "KB 104",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
+      "Polyesterli kaplamalı kumaştan, içi kapitoneli, yüksek görünürlülük özelliğine sahip, kapüşonlu kaban. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "10",
-    productName: "Apple iPhone 12 Pro",
-    imgUrl: productImg13,
-    category: "mobile",
-    price: 799,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
-  },
-  {
-    id: "25",
-    productName: "Sakarias Armchair",
+    productName: "Kaban",
     imgUrl: productImg10,
-    category: "chair",
-    price: 99,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    category: "Kaban",
+    code: "KB 105",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
+      "Polyesterli kaplamalı kumaştan, içi kapitoneli, yüksek görünürlülük özelliğine sahip, kapüşonlu kaban. İstenilen renklerde imalat yapılabilir. ",
   },
+
   {
     id: "11",
-    productName: "Apple iPhone 12 Max",
-    imgUrl: productImg14,
-    category: "mobile",
-    price: 799,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    productName: "Kaban",
+    imgUrl: productImg11,
+    category: "Kaban",
+    code: "KB 106",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
+      "Polyesterli kaplamalı kumaştan, içi kapitoneli, yüksek görünürlülük özelliğine sahip, kapüşonlu kaban. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "12",
-    productName: "Realme 8",
-    imgUrl: productImg15,
-    category: "mobile",
-    price: 599,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    productName: "Kaban",
+    imgUrl: productImg12,
+    category: "Kaban",
+    code: "KB 107",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
+      "Polyesterli kaplamalı kumaştan, içi kapitoneli, kapüşonlu kaban. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "13",
-    productName: "One Plus Nord",
-    imgUrl: productImg16,
-    category: "mobile",
-    price: 799,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    productName: "Kaban",
+    imgUrl: productImg13,
+    category: "Kaban",
+    code: "KB 108",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
+      "Polyesterli kaplamalı kumaştan, içi kapitoneli, çift renk kombinli, reflektörlü kaban. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "14",
-    productName: "Apple iPhone 13 Pro",
-    imgUrl: productImg17,
-    category: "mobile",
-    price: 899,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    productName: "Kaban",
+    imgUrl: productImg14,
+    category: "Kaban",
+    code: "KB 109",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
+      "Polyesterli kaplamalı kumaştan, içi kapitoneli, kapüşonlu kaban. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "15",
-    productName: "Samsung Galaxy S22",
-    imgUrl: productImg18,
-    category: "mobile",
-    price: 699,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    productName: "Kaban",
+    imgUrl: productImg15,
+    category: "Kaban",
+    code: "KB 110",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
+      "Polyesterli kaplamalı kumaştan, içi yelekli, içi astarlı, elyaflı yelekli, reflektörlü, 3 ayrı fonksiyonlu kullanılabilen kaban. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "16",
-    productName: "Rolex Watch",
-    imgUrl: productImg19,
-    category: "watch",
-    price: 299,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    productName: "Kaban",
+    imgUrl: productImg16,
+    category: "Kaban",
+    code: "KB 112",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
+      "Polyesterli kaplamalı kumaştan, çift renk kombinli, içi astarlı, reflektörlü kaban. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "17",
-    productName: "Timex Easy Reader Watch",
-    imgUrl: productImg20,
-    category: "watch",
-    price: 299,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    productName: "Mont",
+    imgUrl: productImg17,
+    category: "Mont",
+    code: "MN 101",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
+      "Polyester kumaştan, kolu çıkarılabilir, çift renk kombinli, içi astarlı mont. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "18",
-    productName: "Rolex Watch",
-    imgUrl: productImg21,
-    category: "watch",
-    price: 299,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    productName: "Mont",
+    imgUrl: productImg18,
+    category: "Mont",
+    code: "MN 102",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
+      "Polyester kumaştan, çift renk kombinli, içi astarlı mont. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "19",
-    productName: "Apple Watch",
-    imgUrl: productImg22,
-    category: "watch",
-    price: 399,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    productName: "Mont",
+    imgUrl: productImg19,
+    category: "Mont",
+    code: "MN 103",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
+      "Pamuklu kumaştan, içi polar ve elyaflı mont. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "20",
-    productName: "Beat Studio Wireless",
-    imgUrl: productImg23,
-    category: "wireless",
-    price: 199,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    productName: "Mont",
+    imgUrl: productImg20,
+    category: "Mont",
+    code: "MN 104",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
+      "Polyesterli kumaştan, içi kapitoneli, reflektörlü, çift renk kombinli mont. İstenilen renklerde imalat yapılabilir. ",
+  },
+
+  {
+    id: "21",
+    productName: "Mont",
+    imgUrl: productImg21,
+    category: "Mont",
+    code: "MN 105",
+    description:
+      "Polyester kumaştan, içi kaptoneli mont. İstenilen renklerde imalat yapılabilir. ",
   },
 
   {
     id: "22",
-    productName: "Beat EP Headphones",
-    imgUrl: productImg25,
-    category: "wireless",
-    price: 199,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    productName: "Mont",
+    imgUrl: productImg22,
+    category: "Mont",
+    code: "MN 106",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
+      "Polyesterli kumaştan, içi kapitoneli, reflektörlü, kapüşonlu mont. İstenilen renklerde imalat yapılabilir. ",
+  },
+
+  {
+    id: "23",
+    productName: "Mont",
+    imgUrl: productImg23,
+    category: "Mont",
+    code: "MN 107",
+    description:
+      "Polyesterli kumaştan, içi kapitoneli, kapüşonlu mont. İstenilen renklerde imalat yapılabilir. ",
+  },
+
+  {
+    id: "24",
+    productName: "Mont",
+    imgUrl: productImg24,
+    category: "Mont",
+    code: "MN 108",
+    description:
+      "Polyesterli kumaştan, içi astarlı, çift renk kombinli mont. İstenilen renklerde imalat yapılabilir. ",
+  },
+
+  {
+    id: "25",
+    productName: "Mont",
+    imgUrl: productImg25,
+    category: "Mont",
+    code: "MN 109",
+    description:
+      "Polyesterli kumaştan, çift renk kombinli, içi kapitoneli, kapüşonlu mont. İstenilen renklerde imalat yapılabilir. ",
+  },
+
+  {
+    id: "26",
+    productName: "Mont",
+    imgUrl: productImg26,
+    category: "Mont",
+    code: "MN 110",
+    description:
+      "Polyesterli kumaştan, içi astarlı, dik yakalı mont. İstenilen renklerde imalat yapılabilir. ",
+  },
+
+  {
+    id: "27",
+    productName: "Mont",
+    imgUrl: productImg27,
+    category: "Mont",
+    code: "MN 111",
+    description:
+      "Polyester kumaştan, içi astarlı, çift renk kombinli mont. İstenilen renklerde imalat yapılabilir. ",
+  },
+
+  {
+    id: "28",
+    productName: "Mont",
+    imgUrl: productImg28,
+    category: "Mont",
+    code: "MN 112",
+    description:
+      "Polyesterli kumaştan, içi astarlı, dik yakalı mont. İstenilen renklerde imalat yapılabilir. ",
+  },
+
+  {
+    id: "29",
+    productName: "Mont",
+    imgUrl: productImg29,
+    category: "Mont",
+    code: "MN 113",
+    description:
+      "Polyesterli kumaştan, içi kapitoneli, dik yakalı, biyeli mont. İstenilen renklerde imalat yapılabilir. ",
+  },
+
+  {
+    id: "30",
+    productName: "Mont",
+    imgUrl: productImg30,
+    category: "Mont",
+    code: "MN 114",
+    description:
+      "Polyesterli kumaştan, çift renk kombinli, içi kapitoneli, kapüşonlu mont. İstenilen renklerde imalat yapılabilir. ",
+  },
+
+  {
+    id: "31",
+    productName: "Mont",
+    imgUrl: productImg31,
+    category: "Mont",
+    code: "MN 115",
+    description:
+      "Polyesterli kumaştan, içi astarlı, dik yakalı mont. İstenilen renklerde imalat yapılabilir. ",
+  },
+
+  {
+    id: "32",
+    productName: "Mont",
+    imgUrl: productImg32,
+    category: "Mont",
+    code: "MN 116",
+    description:
+      "Polyesterli kaplamalı kumaştan, içi kapitoneli, kolları çıkabilen, kapüşonlu mont. İstenilen renklerde imalat yapılabilir. ",
   },
 ];
 

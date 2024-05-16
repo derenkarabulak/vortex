@@ -11,33 +11,45 @@ const Shop = () => {
 
   const handleFilter = (e) => {
     const filterValue = e.target.value;
-    if (filterValue === "sofa") {
+    if (filterValue === "İş Ceketi") {
       const filteredProducts = products.filter(
-        (item) => item.category === "sofa"
+        (item) => item.category === "İş Ceketi"
       );
       setProductsData(filteredProducts);
     }
-    if (filterValue === "mobile") {
+    if (filterValue === "Mont") {
       const filteredProducts = products.filter(
-        (item) => item.category === "mobile"
+        (item) => item.category === "Mont"
       );
       setProductsData(filteredProducts);
     }
-    if (filterValue === "chair") {
+    if (filterValue === "Softshell Mont") {
       const filteredProducts = products.filter(
-        (item) => item.category === "chair"
+        (item) => item.category === "Softshell Mont"
       );
       setProductsData(filteredProducts);
     }
-    if (filterValue === "watch") {
+    if (filterValue === "Kaban") {
       const filteredProducts = products.filter(
-        (item) => item.category === "watch"
+        (item) => item.category === "Kaban"
       );
       setProductsData(filteredProducts);
     }
-    if (filterValue === "wireless") {
+    if (filterValue === "Sweatshirt") {
       const filteredProducts = products.filter(
-        (item) => item.category === "wireless"
+        (item) => item.category === "Sweatshirt"
+      );
+      setProductsData(filteredProducts);
+    }
+    if (filterValue === "Pantolon") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "Pantolon"
+      );
+      setProductsData(filteredProducts);
+    }
+    if (filterValue === "Polar") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "Polar"
       );
       setProductsData(filteredProducts);
     }
@@ -51,7 +63,7 @@ const Shop = () => {
     setProductsData(searchedProducts);
   };
   return (
-    <Helmet title="Shop">
+    <Helmet title="Products">
       <CommonSection title="Products" />
 
       <section>
@@ -60,21 +72,14 @@ const Shop = () => {
             <Col lg="3" md="6">
               <div className="filter__widget">
                 <select onChange={handleFilter}>
-                  <option>Filter By Category</option>
-                  <option value="sofa">Sofa</option>
-                  <option value="mobile">Mobile</option>
-                  <option value="chair">Chair</option>
-                  <option value="watch">Watch</option>
-                  <option value="wireless">Wireless</option>
-                </select>
-              </div>
-            </Col>
-            <Col lg="3" md="6" className="text-end">
-              <div className="filter__widget">
-                <select>
-                  <option>Sort By </option>
-                  <option value="ascending">Ascending</option>
-                  <option value="descending">Descending</option>
+                  <option>Kategoriler</option>
+                  <option value="Mont">Mont</option>
+                  <option value="Softshell Mont">Softshell Mont</option>
+                  <option value="Kaban">Kaban</option>
+                  <option value="İş Ceketi">İş Ceketi</option>
+                  <option value="Sweatshirt">Sweatshirt</option>
+                  <option value="Pantolon">Pantolon</option>
+                  <option value="Polar">Polar</option>
                 </select>
               </div>
             </Col>

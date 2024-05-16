@@ -13,13 +13,15 @@ const Footer = () => {
           <Col lg="4" className="mb-4" md="6">
             <div className="logo">
               <div>
-                <h1 className="text-white">DerenMarkt</h1>
+                <h1 className="text-white">Vortex</h1>
               </div>
             </div>
             <p className="footer__text mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-              odio deleniti cum quaerat aliquid temporibus ducimus nihil
-              voluptates, autem quasi!
+              Sitemizde gezerken, ihtiyacınız olan iş elbisesini bulmakta
+              kolaylık yaşayacaksınız. Ürünlerimizi incelemek ve sizin için en
+              uygun olanı seçmek için hazır mısınız? Eğer herhangi bir sorunuz
+              veya öneriniz varsa, bizimle iletişime geçmekten çekinmeyin. Size
+              yardımcı olmaktan memnuniyet duyarız.
             </p>
           </Col>
           <Col lg="3" md="3" className="mb-4">
@@ -27,19 +29,23 @@ const Footer = () => {
               <h4 className="quick__links-title">Top Categories</h4>
               <ListGroup className="mb-3">
                 <ListGroupItem className="ps-0 border-0">
-                  <Link to="#">Mobile Phones</Link>
+                  <Link to="#">İş Ceketleri</Link>
                 </ListGroupItem>
 
                 <ListGroupItem className="ps-0 border-0">
-                  <Link to="#">Modern Sofa</Link>
+                  <Link to="#">Mont</Link>
                 </ListGroupItem>
 
                 <ListGroupItem className="ps-0 border-0">
-                  <Link to="#">Armchair</Link>
+                  <Link to="#">Kaban</Link>
                 </ListGroupItem>
 
                 <ListGroupItem className="ps-0 border-0">
-                  <Link to="#">Smart Watches</Link>
+                  <Link to="#">Pantolon</Link>
+                </ListGroupItem>
+
+                <ListGroupItem className="ps-0 border-0">
+                  <Link to="#">Polar</Link>
                 </ListGroupItem>
               </ListGroup>
             </div>
@@ -51,15 +57,6 @@ const Footer = () => {
                 <ListGroupItem className="ps-0 border-0">
                   <Link to="/shop">Shop</Link>
                 </ListGroupItem>
-
-                <ListGroupItem className="ps-0 border-0">
-                  <Link to="/cart">Cart</Link>
-                </ListGroupItem>
-
-                <ListGroupItem className="ps-0 border-0">
-                  <Link to="/login">Log in</Link>
-                </ListGroupItem>
-
                 <ListGroupItem className="ps-0 border-0">
                   <Link to="#">Privacy Policy</Link>
                 </ListGroupItem>
@@ -74,7 +71,7 @@ const Footer = () => {
                   <span>
                     <i className="ri-map-pin-line"></i>
                   </span>
-                  <p>İstanbul - Beykoz</p>
+                  <p>İstanbul</p>
                 </ListGroupItem>
 
                 <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
@@ -88,7 +85,7 @@ const Footer = () => {
                   <span>
                     <i className="ri-mail-line"></i>
                   </span>
-                  <p>user@test.com</p>
+                  <p>vortekstekstil@gmail.com</p>
                 </ListGroupItem>
               </ListGroup>
             </div>

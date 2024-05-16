@@ -3,41 +3,10 @@ import { motion } from "framer-motion";
 import "../../styles/product-card.css";
 import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { cartActions } from "../../redux/slices/cartSlice";
-import { favActions } from "../../redux/slices/favSlice";
-import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ item }) => {
-  const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  const addToCart = () => {
-    dispatch(
-      cartActions.addItem({
-        id: item.id,
-        productName: item.productName,
-        price: item.price,
-        imgUrl: item.imgUrl,
-      })
-    );
-
-    toast.success("Product added to the cart!");
-  };
-
-  const addToFavs = () => {
-    dispatch(
-      favActions.addItem({
-        id: item.id,
-        productName: item.productName,
-        price: item.price,
-        imgUrl: item.imgUrl,
-      })
-    );
-
-    toast.success("Product added to the favorites!");
-  };
 
   return (
     <Col lg="3" md="4" className="mb-2">
@@ -45,7 +14,8 @@ const ProductCard = ({ item }) => {
         <div className="product__img">
           <motion.img
             onClick={() => {
-              navigate(`/shop/${item.id}`);
+              navigate(`/product/${item.id}`);
+              window.scrollTo(0, 0);
             }}
             whileHover={{ scale: 0.9 }}
             src={item.imgUrl}
@@ -54,28 +24,16 @@ const ProductCard = ({ item }) => {
         </div>
         <div className="p-2 product__info">
           <h3 className="product__name">
-            <Link to={`/shop/${item.id}`}>{item.productName}</Link>
+            <Link
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              to={`/product/${item.id}`}
+            >
+              {item.productName}
+            </Link>
           </h3>
-          <span>{item.category}</span>
-        </div>
-        <div className="product__card-bottom d-flex align-items-center justify-content-between p-2">
-          <span className="price">${item.price}</span>
-          <div>
-            <motion.span
-              className="inline-block"
-              whileTap={{ scale: 1.2 }}
-              onClick={addToCart}
-            >
-              <i className="ri-add-line"></i>
-            </motion.span>
-            <motion.span
-              className="inline-block ml-2"
-              whileTap={{ scale: 1.2 }}
-              onClick={addToFavs}
-            >
-              <i className="ri-heart-fill"></i>
-            </motion.span>
-          </div>
+          <span>{item.code}</span>
         </div>
       </div>
     </Col>
