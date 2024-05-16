@@ -53,11 +53,6 @@
   cursor: pointer;
 }
 
-.cart__icon,
-.fav__icon {
-  position: relative;
-}
-
 .badge {
   position: absolute;
   top: 50%;
@@ -77,20 +72,30 @@
   cursor: pointer;
 }
 
-.nav__icons .profile img {
-  width: 30px;
-  height: 30px;
+.nav__icons .profile button {
+  width: 55px !important;
+  height: 45px !important;
   cursor: pointer;
-  border-radius: 50%;
+  font-size: 90%;
   display: block !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border: none !important;
+  background-color: #fff;
 }
 
 .nav__icons .profile {
   position: relative;
-  z-index: 9;
+  z-index: 10;
+  top: 30%;
+  left: 0;
+  display: flex;
+  align-items: center !important;
+  line-height: 30px;
+  margin-top: 0;
 }
 
-.nav__icons .profile .profile__actions {
+/* .nav__icons .profile {
   position: absolute;
   top: 100%;
   left: 0;
@@ -103,9 +108,8 @@
   background: var(--card-bg-01);
   line-height: 30px;
   cursor: pointer;
-  display: none;
   margin-top: 17px;
-}
+} */
 
 .show__categories {
   display: block !important;

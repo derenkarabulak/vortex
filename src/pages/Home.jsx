@@ -12,6 +12,7 @@ import Clock from "../components/UI/Clock";
 import { useNavigate } from "react-router-dom";
 import product from "../assets/data/products";
 import { MdChevronLeft } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const [products, setProducts] = useState(product);
@@ -23,6 +24,8 @@ const Home = () => {
   const [pantolon, setPantolon] = useState([]);
   const [polar, setPolar] = useState([]);
   const navigate = useNavigate();
+
+  const [t] = useTranslation("global");
 
   const year = new Date().getFullYear();
 
@@ -65,15 +68,11 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content">
-                <p className="hero__subtitle">{year} Yılının En İyisi</p>
-                <h2>Yüksek Kalite İş Kıyafetleri</h2>
-                <p>
-                  İş dünyasında profesyonel görünmek ve güvenilir bir imaj
-                  çizmek her zaman önemlidir. İşte tam da bu noktada, size en
-                  uygun iş elbisesini bulmanıza yardımcı olmak için buradayız.
-                  Vortex, iş dünyasının taleplerine uygun, kaliteli ve şık iş
-                  elbiseleriyle dolu bir dünyanın kapılarını size açıyor.
+                <p className="hero__subtitle">
+                  {year} - {t("home.slogan")}
                 </p>
+                <h2>{t("home.head")}</h2>
+                <p>{t("home.homeinfo")}</p>
                 <motion.button
                   onClick={() => {
                     navigate("/products");
@@ -88,7 +87,7 @@ const Home = () => {
                     }}
                     to="/products"
                   >
-                    ÜRÜNLER
+                    {t("home.productbtn")}
                   </Link>
                 </motion.button>
               </div>

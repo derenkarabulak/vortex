@@ -3,8 +3,11 @@ import { Container, Row, Col } from "reactstrap";
 import { motion } from "framer-motion";
 import "../services/services.css";
 import serviceData from "../assets/data/serviceData";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const [t] = useTranslation("global");
+
   return (
     <section className="services">
       <Container>

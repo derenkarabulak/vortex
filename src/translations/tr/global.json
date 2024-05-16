@@ -1,0 +1,13 @@
+{
+    "header": {
+        "home": "Anasayfa",
+        "products": "Ürünler",
+        "about": "Hakkımızda"
+    },
+    "home": {
+        "slogan": "Yılın En İyisi",
+        "head": "Yüksek Kalite İş Kıyafetleri",
+        "homeinfo": "İş dünyasında profesyonel görünmek ve güvenilir bir imaj çizmek her zaman önemlidir. İşte tam da bu noktada, size en uygun iş elbisesini bulmanıza yardımcı olmak için buradayız. Vortex, iş dünyasının taleplerine uygun, kaliteli ve şık iş elbiseleriyle dolu bir dünyanın kapılarını size açıyor.",
+        "productbtn": "ÜRÜNLER"
+    }
+}
