@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vortex/static/css/main.d85b1fef.css",
-    "main.js": "/vortex/static/js/main.baf3dfa0.js",
+    "main.js": "/vortex/static/js/main.32cb95b0.js",
     "static/media/remixicon.svg?t=1590207869815": "/vortex/static/media/remixicon.9cedd2150922ead84869.svg",
     "static/media/herobg.png": "/vortex/static/media/herobg.92fd6f601aaec7c351f1.png",
     "static/media/is-ceketi-02.jpg": "/vortex/static/media/is-ceketi-02.5c3215d34cdb51391701.jpg",
@@ -44,10 +44,10 @@
     "static/media/hero-img.png": "/vortex/static/media/hero-img.daf4d7053f4e2a859b44.png",
     "index.html": "/vortex/index.html",
     "main.d85b1fef.css.map": "/vortex/static/css/main.d85b1fef.css.map",
-    "main.baf3dfa0.js.map": "/vortex/static/js/main.baf3dfa0.js.map"
+    "main.32cb95b0.js.map": "/vortex/static/js/main.32cb95b0.js.map"
   },
   "entrypoints": [
     "static/css/main.d85b1fef.css",
-    "static/js/main.baf3dfa0.js"
+    "static/js/main.32cb95b0.js"
   ]
 }
