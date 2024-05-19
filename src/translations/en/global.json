@@ -8,6 +8,64 @@
         "slogan": "Best Of the Year",
         "head": "High Quality Work Wears",
         "homeinfo": "In the business world, appearing professional and establishing a trustworthy image is always important. At this very point, we are here to assist you in finding the most suitable business attire. Vortex opens the doors to a world filled with quality and stylish business suits that meet the demands of the business world.",
-        "productbtn": "PRODUCTS"
+        "productbtn": "PRODUCTS",
+        "limited": "Limited Time Offer"
+    },
+    "services": {
+        "iconone": "ri-user-smile-fill",
+        "titleone": "Personal Counseling",
+        "subtitleone": "Professional guidance for customers in selecting work attire.",
+        "bgone": "#fdefe6",
+        "icontwo": "ri-user-smile-fill",
+        "titletwo": "Custom Design and Tailoring",
+        "subtitletwo": "Designing work attire tailored to customers' body measurements.",
+        "bgtwo": "#ceebe9",
+        "iconthree": "ri-building-2-fill",
+        "titlethree": "Corporate Identity Alignment",
+        "subtitlethree": "Selection of work attire in accordance with brand identity for companies.",
+        "bgthree": "#e2f2b2",
+        "iconfour": "ri-refresh-fill",
+        "titlefour": "Trend Analysis and Updates",
+        "subtitlefour": "Providing customers with information on fashion trends and current styles.",
+        "bgfour": "#d6e5fb"
+    },
+    "products": {
+        "categories": "Categories",
+        "mont": "Jacket",
+        "softshell": "Softshell Jacket",
+        "kaban": "Coat",
+        "isceketi": "Work Jacket",
+        "sweatshirt": "Sweatshirt",
+        "pants": "Trousers",
+        "polar": "Polar",
+        "noproducts": "No products are found!"
+    },
+    "clock": {
+        "days": "Days",
+        "hours": "Hours",
+        "minutes": "Minutes",
+        "seconds": "Seconds"
+    },
+    "footer": {
+        "topcategories": "Top Categories",
+        "shortinfo": "As you browse our site, you'll find it easy to locate the work attire you need. Are you ready to explore our products and select the one that best suits you? If you have any questions or suggestions, please don't hesitate to contact us. We're here to help and would be delighted to assist you.",
+        "usefullinks": "Useful Links",
+        "privacy": "Privacy Policy",
+        "contact": "Contact",
+        "copyright": "Copyright",
+        "developedby": "developed by Deren Karabulak. All rights reserved."
+    },
+    "shop": {
+        "search": "Search..."
+    },
+    "aboutpage":{
+        "about": "About Us",
+        "about1": "Welcome!",
+        "about2": "Looking professional and portraying a reliable image in the business world is always important. That's where we come in to help you find the perfect work attire. Vortex opens the doors to a world filled with high-quality and stylish work clothes tailored to the demands of the business world.",
+        "about3": "Every workplace has its own unique style and requirements. With this in mind, we offer a wide range of options suitable for every type of work environment in our extensive product range. From office meetings to important presentations, from business trips to corporate events, we await to help you find the perfect options to meet your needs.",
+        "about4": "With our customer satisfaction and quality-focused service approach, we keep up with the latest trends in work attire and offer you the highest quality products from reliable brands. We are here to provide you with professional and sincere support as you choose the one that suits your style and needs.",
+        "about5": "As you browse our site, you'll find it easy to locate the work attire you need. Are you ready to explore our products and select the one that best suits you? If you have any questions or suggestions, please don't hesitate to contact us. We're here to help and would be delighted to assist you.",
+        "about6": "As the Vortex family, we are eager to bring you together with work attire that reflects your professionalism and style. We look forward to having you among us!",
+        "about7": "Best regards, Vortex Team"
     }
 }

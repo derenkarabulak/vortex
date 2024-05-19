@@ -8,6 +8,64 @@
         "slogan": "Yılın En İyisi",
         "head": "Yüksek Kalite İş Kıyafetleri",
         "homeinfo": "İş dünyasında profesyonel görünmek ve güvenilir bir imaj çizmek her zaman önemlidir. İşte tam da bu noktada, size en uygun iş elbisesini bulmanıza yardımcı olmak için buradayız. Vortex, iş dünyasının taleplerine uygun, kaliteli ve şık iş elbiseleriyle dolu bir dünyanın kapılarını size açıyor.",
-        "productbtn": "ÜRÜNLER"
+        "productbtn": "ÜRÜNLER",
+        "limited": "Sınırlı Süreli Teklif"
+    },
+    "services": {
+        "iconone": "ri-user-smile-fill",
+        "titleone": "Kişisel Danışmanlık",
+        "subtitleone": "Müşterilere iş elbisesi seçiminde profesyonel rehberlik.",
+        "bgone": "#fdefe6",
+        "icontwo": "ri-pencil-ruler-2-fill",
+        "titletwo": "Özel Tasarım ve Ölçü",
+        "subtitletwo": "Müşterilerin vücut ölçülerine uygun iş elbisesi tasarımı.",
+        "bgtwo": "#ceebe9",
+        "iconthree": "ri-building-2-fill",
+        "titlethree": "Kurumsal Kimlik Uyumu",
+        "subtitlethree": "Şirketler için marka kimliklerine uygun iş elbisesi seçimi.",
+        "bgthree": "#e2f2b2",
+        "iconfour": "ri-refresh-fill",
+        "titlefour": "Trend Analizi ve Güncellemeler",
+        "subtitlefour": "Müşterilere moda trendleri ve güncel stiller hakkında bilgi verme.",
+        "bgfour": "#d6e5fb"
+    },
+    "products": {
+        "categories": "Kategoriler",
+        "mont": "Mont",
+        "softshell": "Softshell Mont",
+        "kaban": "Kaban",
+        "isceketi": "İş Ceketi",
+        "sweatshirt": "Sweatshirt",
+        "pants": "Pantolon",
+        "polar": "Polar",
+        "noproducts": "Ürün bulunamadı!"
+    },
+    "clock": {
+        "days": "Gün",
+        "hours": "Saat",
+        "minutes": "Dakika",
+        "seconds": "Saniye"
+    },
+    "footer": {
+        "topcategories": "Sevilen Kategoriler",
+        "shortinfo": "Sitemizde gezerken, ihtiyacınız olan iş elbisesini bulmakta kolaylık yaşayacaksınız. Ürünlerimizi incelemek ve sizin için en uygun olanı seçmek için hazır mısınız? Eğer herhangi bir sorunuz veya öneriniz varsa, bizimle iletişime geçmekten çekinmeyin. Size yardımcı olmaktan memnuniyet duyarız.",
+        "usefullinks": "Kullanışlı Linkler",
+        "privacy": "Gizlilik Politikası",
+        "contact": "İletişim",
+        "copyright": "Telif Hakkı",
+        "developedby": "Deren Karabulak tarafından geliştirildi. Tüm hakları saklıdır."
+    },
+    "shop": {
+        "search": "Ara..."
+    },
+    "aboutpage":{
+        "about": "Hakkımızda",
+        "about1": "Hoş Geldiniz!",
+        "about2": "İş dünyasında profesyonel görünmek ve güvenilir bir imaj çizmek her zaman önemlidir. İşte tam da bu noktada, size en uygun iş elbisesini bulmanıza yardımcı olmak için buradayız. Vortex, iş dünyasının taleplerine uygun, kaliteli ve şık iş elbiseleriyle dolu bir dünyanın kapılarını size açıyor.",
+        "about3": "Her işyerinin kendine özgü bir tarzı ve gereksinimleri vardır. Biz de bu bilinciyle, geniş ürün yelpazemizde her türden iş ortamına uygun seçenekler sunuyoruz. Ofis toplantılarından önemli sunumlara, iş gezilerinden kurumsal etkinliklere kadar, ihtiyaçlarınızı karşılayacak mükemmel seçenekleri bulmak için sizleri bekliyoruz.",
+        "about4": "Müşteri memnuniyeti ve kalite odaklı hizmet anlayışımızla, iş elbiselerindeki en son trendleri takip ediyor ve sizlere güvenilir markaların en kaliteli ürünlerini sunuyoruz. Tarzınıza ve ihtiyaçlarınıza uygun olanı seçerken size profesyonel ve samimi bir destek sunmak için buradayız.",
+        "about5": "Sitemizde gezerken, ihtiyacınız olan iş elbisesini bulmakta kolaylık yaşayacaksınız. Ürünlerimizi incelemek ve sizin için en uygun olanı seçmek için hazır mısınız? Eğer herhangi bir sorunuz veya öneriniz varsa, bizimle iletişime geçmekten çekinmeyin. Size yardımcı olmaktan memnuniyet duyarız.",
+        "about6": "Vortex ailesi olarak, profesyonelliğinizi ve stilinizi yansıtan iş elbiseleriyle sizleri buluşturmak için sabırsızlanıyoruz. Sizi aramızda görmek için sabırsızlanıyoruz!",
+        "about7": "Saygılarımızla, Vortex Ekibi"
     }
 }

@@ -5,9 +5,17 @@ import { Container, Row, Col } from "reactstrap";
 import "../styles/shop.css";
 import products from "../assets/data/products";
 import ProductsList from "../components/UI/ProductsList";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 const Shop = () => {
   const [productsData, setProductsData] = useState(products);
+
+  const [t] = useTranslation("global");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleFilter = (e) => {
     const filterValue = e.target.value;
@@ -63,8 +71,8 @@ const Shop = () => {
     setProductsData(searchedProducts);
   };
   return (
-    <Helmet title="Products">
-      <CommonSection title="Products" />
+    <Helmet title={t("header.products")}>
+      <CommonSection title={t("header.products")} />
 
       <section>
         <Container>
@@ -72,14 +80,16 @@ const Shop = () => {
             <Col lg="3" md="6">
               <div className="filter__widget">
                 <select onChange={handleFilter}>
-                  <option>Kategoriler</option>
-                  <option value="Mont">Mont</option>
-                  <option value="Softshell Mont">Softshell Mont</option>
-                  <option value="Kaban">Kaban</option>
-                  <option value="İş Ceketi">İş Ceketi</option>
-                  <option value="Sweatshirt">Sweatshirt</option>
-                  <option value="Pantolon">Pantolon</option>
-                  <option value="Polar">Polar</option>
+                  <option>{t("products.categories")}</option>
+                  <option value="Mont">{t("products.mont")}</option>
+                  <option value="Softshell Mont">
+                    {t("products.softshell")}
+                  </option>
+                  <option value="Kaban">{t("products.kaban")}</option>
+                  <option value="İş Ceketi">{t("products.isceketi")}</option>
+                  <option value="Sweatshirt">{t("products.sweatshirt")}</option>
+                  <option value="Pantolon">{t("products.pants")}</option>
+                  <option value="Polar">{t("products.polar")}</option>
                 </select>
               </div>
             </Col>
@@ -87,7 +97,7 @@ const Shop = () => {
               <div className="search__box">
                 <input
                   type="text"
-                  placeholder="Search..."
+                  placeholder={t("shop.search")}
                   onChange={handleSearch}
                 />
                 <span>
@@ -102,7 +112,7 @@ const Shop = () => {
         <Container>
           <Row>
             {productsData.length === 0 ? (
-              <h1 className="text-center fs-4">No products are found!</h1>
+              <h1 className="text-center fs-4">{t("products.noproducts")}</h1>
             ) : (
               <ProductsList data={productsData} />
             )}

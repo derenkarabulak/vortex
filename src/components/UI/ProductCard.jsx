@@ -9,7 +9,7 @@ const ProductCard = ({ item }) => {
   const navigate = useNavigate();
 
   return (
-    <Col lg="3" md="4" className="mb-2">
+    <Col lg="4" md="3" className="mb-2">
       <div className="product__item">
         <div className="product__img">
           <motion.img

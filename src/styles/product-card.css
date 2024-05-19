@@ -1,5 +1,11 @@
 .product__item {
   cursor: pointer;
+  align-items: center;
+}
+
+.product__img {
+  width: 100%;
+  height: 100%;
 }
 
 .product__info h3 a {

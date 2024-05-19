@@ -11,52 +11,63 @@ import counterImg from "../assets/images/hero-img.png";
 import Clock from "../components/UI/Clock";
 import { useNavigate } from "react-router-dom";
 import product from "../assets/data/products";
-import { MdChevronLeft } from "react-icons/md";
 import { useTranslation } from "react-i18next";
+import products from "../assets/data/products";
 
 const Home = () => {
-  const [products, setProducts] = useState(product);
+  const [productsData, setProductsData] = useState("");
 
-  const [Mont, setMont] = useState([]);
-  const [isCeketi, setIsCeketi] = useState([]);
-  const [kaban, setKaban] = useState([]);
-  const [sweatshirt, setSweatshirt] = useState([]);
-  const [pantolon, setPantolon] = useState([]);
-  const [polar, setPolar] = useState([]);
   const navigate = useNavigate();
 
   const [t] = useTranslation("global");
 
   const year = new Date().getFullYear();
 
-  useEffect(() => {
-    const filteredMont = products.filter((item) => item.category === "Mont");
-
-    const filteredIsCeketi = products.filter(
-      (item) => item.category === "İş Ceketi"
-    );
-
-    const filteredKaban = products.filter((item) => item.category === "Kaban");
-
-    const filteredSweatshirt = products.filter(
-      (item) => item.category === "Sweatshirt"
-    );
-
-    const filteredPantolon = products.filter(
-      (item) => item.category === "Pantolon"
-    );
-
-    const filteredPolar = products.filter((item) => item.category === "Polar");
-
-    setMont(filteredMont);
-    setIsCeketi(filteredIsCeketi);
-    setKaban(filteredKaban);
-    setSweatshirt(filteredSweatshirt);
-    setPantolon(filteredPantolon);
-    setPolar(filteredPolar);
-  }, [products]);
-
-  console.log(Mont);
+  const handleFilter = (e) => {
+    const filterValue = e.target.value;
+    if (filterValue === "İş Ceketi") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "İş Ceketi"
+      );
+      setProductsData(filteredProducts);
+    }
+    if (filterValue === "Mont") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "Mont"
+      );
+      setProductsData(filteredProducts);
+    }
+    if (filterValue === "Softshell Mont") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "Softshell Mont"
+      );
+      setProductsData(filteredProducts);
+    }
+    if (filterValue === "Kaban") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "Kaban"
+      );
+      setProductsData(filteredProducts);
+    }
+    if (filterValue === "Sweatshirt") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "Sweatshirt"
+      );
+      setProductsData(filteredProducts);
+    }
+    if (filterValue === "Pantolon") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "Pantolon"
+      );
+      setProductsData(filteredProducts);
+    }
+    if (filterValue === "Polar") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "Polar"
+      );
+      setProductsData(filteredProducts);
+    }
+  };
 
   return (
     <Helmet title={"Home"}>
@@ -97,86 +108,48 @@ const Home = () => {
       </section>
 
       <Services />
-      <section className="text-white font-bold md:text-xl p-4">
-        <Container className="relative flex items-center group">
-          <Row className="overflow-clip">
-            <Col lg="12" className="text-center">
-              <h2 className="section__title">Mont</h2>
-            </Col>
-            <ProductsList
-              onClick={() => {
-                window.scrollTo(0, 0);
-              }}
-              data={Mont}
-            />
-          </Row>
-        </Container>
-      </section>
-
-      <section className="is__ceketi">
+      <section>
         <Container>
           <Row>
-            <Col lg="12" className="text-center">
-              <h2 className="section__title">İş Ceketi</h2>
+            <Col lg="3" md="6">
+              <div className="filter__widget">
+                <select onChange={handleFilter}>
+                  <option>{t("products.categories")}</option>
+                  <option value="Mont">{t("products.mont")}</option>
+                  <option value="Softshell Mont">
+                    {t("products.softshell")}
+                  </option>
+                  <option value="Kaban">{t("products.kaban")}</option>
+                  <option value="İş Ceketi">{t("products.isceketi")}</option>
+                  <option value="Sweatshirt">{t("products.sweatshirt")}</option>
+                  <option value="Pantolon">{t("products.pants")}</option>
+                  <option value="Polar">{t("products.polar")}</option>
+                </select>
+              </div>
             </Col>
-            <ProductsList data={isCeketi} />
           </Row>
         </Container>
       </section>
-
-      <section className="kaban">
+      <section>
         <Container>
           <Row>
-            <Col lg="12" className="text-center mb-5">
-              <h2 className="section__title">Kaban</h2>
-            </Col>
-            <ProductsList data={kaban} />
+            {productsData.length === 0 ? (
+              <h1 className="text-center fs-4 text-white">
+                {t("products.noproducts")}
+              </h1>
+            ) : (
+              <ProductsList data={productsData} />
+            )}
           </Row>
         </Container>
       </section>
-
-      <section className="sweatshirt">
-        <Container>
-          <Row>
-            <Col lg="12" className="text-center mb-5">
-              <h2 className="section__title">Sweatshirt</h2>
-            </Col>
-            <ProductsList data={sweatshirt} />
-          </Row>
-        </Container>
-      </section>
-
-      <section className="pantolon">
-        <Container>
-          <Row>
-            <Col lg="12" className="text-center mb-5">
-              <h2 className="section__title">Pantolon</h2>
-            </Col>
-            <ProductsList data={pantolon} />
-          </Row>
-        </Container>
-      </section>
-
-      <section className="polar">
-        <Container>
-          <Row>
-            <Col lg="12" className="text-center mb-5">
-              <h2 className="section__title">Polar</h2>
-            </Col>
-            <ProductsList data={polar} />
-          </Row>
-        </Container>
-      </section>
-
       <section className="timer__count">
         <Container>
           <Row>
             <Col lg="6" md="12" className="count__down-col">
               <div className="clock__top-content">
-                <h4 className="text-white fs-6 mb-2">Sınırlı Süreli Teklif</h4>
-                <h3 className="text-white fs-5 mb-3">
-                  Kaliteli İş Kıyafetleri
-                </h3>
+                <h4 className="text-white fs-6 mb-2">{t("home.limited")}</h4>
+                <h3 className="text-white fs-5 mb-3">{t("home.head")}</h3>
               </div>
               <Clock />
               <motion.button
@@ -184,7 +157,7 @@ const Home = () => {
                 whileTap={{ scale: 1.2 }}
                 className="shop__btn store__btn"
               >
-                <Link to="/products">Ürünleri Gör</Link>
+                <Link to="/products">{t("home.productbtn")}</Link>
               </motion.button>
             </Col>
             <Col lg="6" md="12" className="text-end counter__img">
