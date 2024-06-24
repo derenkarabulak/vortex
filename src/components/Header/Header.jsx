@@ -1,9 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./header.css";
-import { Container, Row } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import logo from "../../assets/images/logo-w.jpg";
 import { useTranslation } from "react-i18next";
+import Dropdown from "../UI/Dropdown";
 
 const Header = () => {
   const [t, i18n] = useTranslation("global");
@@ -37,6 +38,22 @@ const Header = () => {
   const handleLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
+
+  const handleFilter = (value) => {
+    navigate(value);
+  };
+
+  const categoryOptions = [
+    { value: "/mont", label: t("products.mont") },
+    { value: "/softshell-mont", label: t("products.softshell") },
+    { value: "/kaban", label: t("products.kaban") },
+    { value: "/is-ceketi", label: t("products.isceketi") },
+    { value: "/sweatshirt", label: t("products.sweatshirt") },
+    { value: "/pantolon", label: t("products.pants") },
+    { value: "/polar", label: t("products.polar") },
+    { value: "/tshirt", label: t("products.tshirt") },
+    { value: "/vest", label: t("products.vest") },
+  ];
 
   return (
     <header className="header" ref={headerRef}>
@@ -87,6 +104,13 @@ const Header = () => {
                   >
                     {t("header.about")}
                   </NavLink>
+                </li>
+                <li className="nav__item">
+                  <Dropdown
+                    options={categoryOptions}
+                    onChange={handleFilter}
+                    defaultLabel={t("products.categories")}
+                  />
                 </li>
               </ul>
             </div>

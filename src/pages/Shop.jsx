@@ -61,6 +61,18 @@ const Shop = () => {
       );
       setProductsData(filteredProducts);
     }
+    if (filterValue === "T-Shirt") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "T-Shirt"
+      );
+      setProductsData(filteredProducts);
+    }
+    if (filterValue === "Yelek") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "Yelek"
+      );
+      setProductsData(filteredProducts);
+    }
   };
 
   const handleSearch = (e) => {
@@ -90,6 +102,8 @@ const Shop = () => {
                   <option value="Sweatshirt">{t("products.sweatshirt")}</option>
                   <option value="Pantolon">{t("products.pants")}</option>
                   <option value="Polar">{t("products.polar")}</option>
+                  <option value="T-Shirt">{t("products.tshirt")}</option>
+                  <option value="Yelek">{t("products.vest")}</option>
                 </select>
               </div>
             </Col>

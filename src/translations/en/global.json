@@ -38,6 +38,8 @@
         "sweatshirt": "Sweatshirt",
         "pants": "Trousers",
         "polar": "Polar",
+        "tshirt": "T-shirt",
+        "vest": "Vest",
         "noproducts": "No products are found!"
     },
     "clock": {

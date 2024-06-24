@@ -143,7 +143,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      <section className="timer__count">
+      {/* <section className="timer__count">
         <Container>
           <Row>
             <Col lg="6" md="12" className="count__down-col">
@@ -165,7 +165,7 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
     </Helmet>
   );
 };

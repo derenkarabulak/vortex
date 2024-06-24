@@ -38,6 +38,8 @@
         "sweatshirt": "Sweatshirt",
         "pants": "Pantolon",
         "polar": "Polar",
+        "tshirt": "Tişört",
+        "vest": "Yelek",
         "noproducts": "Ürün bulunamadı!"
     },
     "clock": {
