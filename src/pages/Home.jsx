@@ -108,41 +108,6 @@ const Home = () => {
       </section>
 
       <Services />
-      <section>
-        <Container>
-          <Row>
-            <Col lg="3" md="6">
-              <div className="filter__widget">
-                <select onChange={handleFilter}>
-                  <option>{t("products.categories")}</option>
-                  <option value="Mont">{t("products.mont")}</option>
-                  <option value="Softshell Mont">
-                    {t("products.softshell")}
-                  </option>
-                  <option value="Kaban">{t("products.kaban")}</option>
-                  <option value="İş Ceketi">{t("products.isceketi")}</option>
-                  <option value="Sweatshirt">{t("products.sweatshirt")}</option>
-                  <option value="Pantolon">{t("products.pants")}</option>
-                  <option value="Polar">{t("products.polar")}</option>
-                </select>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <section>
-        <Container>
-          <Row>
-            {productsData.length === 0 ? (
-              <h1 className="text-center fs-4 text-white">
-                {t("products.noproducts")}
-              </h1>
-            ) : (
-              <ProductsList data={productsData} />
-            )}
-          </Row>
-        </Container>
-      </section>
       {/* <section className="timer__count">
         <Container>
           <Row>
